@@ -1,0 +1,495 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 56px;
+  background: white;
+}
+
+.left {
+  float: left;
+  margin-right: 200px;
+}
+
+.menu {
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+  float: left;
+}
+
+.menu img {
+  width: 100%;
+  height: 100%;
+}
+
+.youtube {
+  width: 120px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  float: left;
+}
+
+.youtube img {
+  width: 90px;
+  height: 20px;
+  padding-top: 18px;
+}
+
+.tw {
+  position: absolute;
+  font-size: 8px;
+  top: 5px;
+  right: 10px;
+  color: gray;
+}
+
+.middle {
+  position: relative;
+  width: 728px;
+  height: 40px;
+  float: left;
+  margin: auto;
+}
+
+.search {
+  width: 572px;
+  height: 40px;
+  display: inline-block;
+  position: absolute;
+  margin-top: 10px;
+}
+
+input {
+  display: inline-block;
+  width: 563px;
+  height: 26px;
+  margin: 0px 0px 0px 4px;
+  padding: 1px 2px;
+  position: absolute;
+}
+
+button {
+  display: inline-block;
+  width: 64px;
+  height: 32px;
+  padding: 1px 6px;
+  position: absolute;
+  left: 571px;
+}
+
+.mic {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  position: absolute;
+  left: 650px;
+  text-align: center;
+  top: 15px
+}
+
+.right {
+  float: right;
+}
+
+.box {
+  width: 85px;
+  height: 40px;
+  border: 2px solid rgb(0, 0, 255);
+  text-align: center;
+}
+
+.account, .in {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.account {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  line-height: 56px;
+  vertical-align: middle;
+}
+
+.in {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.in p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.apps, .more, .box {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.more, .apps {
+  width: 40px;
+  height: 40px;
+  line-height: 56px;
+  text-align: center;
+}
+
+.sidebar {
+  width: 240px;
+  height: 654px;
+  float: left;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin-top: 56px;
+  position: fixed;
+}
+
+.one {
+  width: 240px;
+  height: 120px;
+  padding: 12px 0px;
+  border-bottom: 1px solid rgb(177, 176, 176);
+}
+
+.one img, .one p {
+  display: inline-block;
+  font-size: 14px;
+  /* 讓icon跟文字垂直對齊 */
+  vertical-align: middle;
+}
+
+.one img {
+  margin: 0 24px 0 0;
+}
+
+.front-page, .explore, .subscription, .two .video, .history {
+  width: 240px;
+  height: 40px;
+  padding-left: 15px;
+  line-height: 40px;
+}
+
+.two {
+  width: 240px;
+  height: 80px;
+  padding: 8px 0px;
+  border-bottom: 1px solid rgb(177, 176, 176);
+}
+
+.two img, .two p {
+  display: inline-block;
+  font-size: 14px;
+  /* 讓icon跟文字垂直對齊 */
+  vertical-align: middle;
+}
+
+.two img {
+  margin: 0 24px 0 0;
+}
+
+.three {
+  width: 240px;
+  height: 120px;
+  border-bottom: 1px solid rgb(177, 176, 176);
+}
+
+.log {
+  width: 176px;
+  height: 40px;
+  display: inline-block;
+  margin-left: 24px;
+  margin-top: 10px;
+}
+
+.log p {
+  font-size: 14px;
+}
+
+.log-box {
+  width: 90px;
+  height: 30px;
+  border: 2px solid blue;
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 24px;
+}
+
+.log-box img, .log-box p {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.log-box p {
+  display: inline-block;
+  margin: 5px;
+}
+
+.log-box img {
+  margin-left: 10px;
+}
+
+.four {
+  width: 240px;
+  height: 333px;
+  padding: 8px 0px;
+  border-bottom: 1px solid rgb(177, 176, 176);
+}
+
+.four img, .four p {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.four img {
+  margin: 0 24px 0 0;
+}
+
+.youtube-featured, .music, .pe, .game, .movie, .news, .live, .deg-video {
+  width: 240px;
+  height: 40px;
+  padding-left: 15px;
+  line-height: 40px;
+}
+
+.five {
+  width: 240px;
+  height: 50px;
+  padding: 8px 0px;
+  border-bottom: 1px solid rgb(177, 176, 176);
+}
+
+.five img, .five p {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.five img {
+  margin: 0 24px 0 0;
+}
+
+.add {
+  width: 240px;
+  height: 40px;
+  padding-left: 15px;
+  line-height: 40px;
+}
+
+.six {
+  width: 240px;
+  height: 133px;
+  padding: 8px 0px;
+  border-bottom: 1px solid rgb(177, 176, 176);
+}
+
+.six img, .six p {
+  display: inline-block;
+  font-size: 14px;
+  /* 讓icon跟文字垂直對齊 */
+  vertical-align: middle;
+}
+
+.six img {
+  margin: 0 24px 0 0;
+}
+
+.more-function, .premium, .live2 {
+  width: 240px;
+  height: 40px;
+  padding-left: 15px;
+  line-height: 40px;
+}
+
+.seven {
+  width: 240px;
+  height: 176px;
+  padding: 8px 0px;
+  border-bottom: 1px solid rgb(177, 176, 176);
+}
+
+.seven img, .seven p {
+  display: inline-block;
+  font-size: 14px;
+  /* 讓icon跟文字垂直對齊 */
+  vertical-align: middle;
+}
+
+.seven img {
+  margin: 0 24px 0 0;
+}
+
+.setting, .report, .explanation, .provide-advices {
+  width: 240px;
+  height: 40px;
+  padding-left: 15px;
+  line-height: 40px;
+}
+
+.eight {
+  width: 240px;
+}
+
+.p1 {
+  font-size: 12px;
+  padding: 16px 24px 0;
+}
+
+.p2 {
+  font-size: 12px;
+  padding: 12px 24px 0;
+}
+
+.p3 {
+  font-size: 12px;
+  padding: 16px 20px;
+}
+
+.content {
+  width: 1184px;
+  float: right;
+  height: 654px;
+  margin-top: 56px;
+  background: white;
+}
+
+.label-column {
+  /* 讓行內元素置中 */
+  text-align: center;
+  background: white;
+}
+
+.label-column {
+  border-top: 1px solid rgb(177, 176, 176);
+  position: fixed;
+  background: white;
+  display: block;
+  width: 1184px;
+}
+
+.label-column span {
+  border: 1px solid grey;
+  border-radius: 1000px;
+  padding: 0px 12px;
+  margin: 12px 12px 12px 0;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.banner {
+  margin-top: 50px;
+  background-color: black;
+  height: 260px;
+  padding: 40px;
+  position: relative;
+}
+
+.close {
+  width: 24px;
+  height: 24px;
+  background: grey;
+  color: white;
+  right: 20px;
+  position: absolute;
+  text-align: center;
+}
+
+.banner1 {
+  width: 320px;
+  height: 24px;
+  margin-top: 50px;
+}
+
+.banner1 img {
+  width: 100%;
+}
+
+.banner2 p {
+  color: white;
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+.banner-box {
+  width: 92px;
+  height: 40px;
+  border: 2px solid white;
+  margin-top: 80px;
+}
+
+.b-box {
+  font-size: 12px;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+}
+
+.b-box p {
+  display: inline-block;
+}
+
+.col {
+  width: 271px;
+  margin: 5px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.body {
+  margin-top: 10px;
+}
+
+.video-card .video img {
+  width: 100%;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+}
+
+.logo img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.upper-half {
+  margin-bottom: 5px;
+  font-size: 0;
+}
+
+.video-title {
+  width: 199px;
+  height: 44px;
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  margin-left: 4px;
+  overflow: hidden;
+}
+
+.video-title h4 {
+  color: black;
+  margin: 0px;
+  text-overflow: ellipsis;
+}
+
+.video-content {
+  margin-left: 46px;
+}
+
+.video-content p {
+  margin: 0px;
+  font-size: 12px;
+  color: grey;
+}
