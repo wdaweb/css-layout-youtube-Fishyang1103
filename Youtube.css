@@ -3,8 +3,14 @@
   padding: 0;
 }
 
+.container {
+  width: 100%;
+}
+
 .header {
+  width: 100%;
   position: fixed;
+  z-index: 1000;
   top: 0;
   right: 0;
   left: 0;
@@ -58,7 +64,7 @@
   width: 728px;
   height: 40px;
   float: left;
-  margin: auto;
+  margin-left: 280px;
 }
 
 .search {
@@ -144,10 +150,13 @@ button {
 }
 
 .sidebar {
-  width: 240px;
-  height: 654px;
+  width: 13%;
+  height: 100%;
+  /* width: 240px; */
+  /* height: 654px; */
+  height: 100%;
   float: left;
-  overflow: hidden;
+  overflow: scroll;
   overflow-y: scroll;
   margin-top: 56px;
   position: fixed;
@@ -346,7 +355,7 @@ button {
 
 .p2 {
   font-size: 12px;
-  padding: 12px 24px 0;
+  padding: 12px 24px 2px;
 }
 
 .p3 {
@@ -355,7 +364,9 @@ button {
 }
 
 .content {
-  width: 1184px;
+  width: 87%;
+  /* border-top: 1px solid rgb(177, 176, 176); */
+  /* width: 1184px; */
   float: right;
   height: 654px;
   margin-top: 56px;
@@ -366,14 +377,12 @@ button {
   /* 讓行內元素置中 */
   text-align: center;
   background: white;
-}
-
-.label-column {
-  border-top: 1px solid rgb(177, 176, 176);
   position: fixed;
   background: white;
   display: block;
-  width: 1184px;
+  width: 100%;
+  z-index: 99999;
+  border-top: 1px solid rgb(177, 176, 176);
 }
 
 .label-column span {
@@ -391,6 +400,7 @@ button {
   height: 260px;
   padding: 40px;
   position: relative;
+  /* width: 87%; */
 }
 
 .close {
@@ -438,24 +448,40 @@ button {
 }
 
 .col {
-  width: 271px;
+  /* width: 271px; */
+  width: 22%;
   margin: 5px;
   padding: 5px;
   display: inline-block;
+  position: relative;
 }
 
 .body {
   margin-top: 10px;
 }
 
+.video-card {
+  margin-top: 20px;
+  width: 100%;
+  /* margin-left: 90px; */
+  /* padding: 0 200px; */
+  text-align: center;
+}
+
 .video-card .video img {
+  width: 100%;
+}
+
+.upper-half {
   width: 100%;
 }
 
 .logo {
   width: 44px;
   height: 44px;
-  display: inline-block;
+  /* display: inline-block; */
+  float: left;
+  padding-left: -30px;
 }
 
 .logo img {
@@ -463,33 +489,32 @@ button {
   border-radius: 50%;
 }
 
-.upper-half {
-  margin-bottom: 5px;
-  font-size: 0;
-}
-
 .video-title {
-  width: 199px;
+  width: 80%;
   height: 44px;
-  display: inline-block;
+  /* display: inline-block; */
   color: white;
   font-size: 14px;
-  margin-left: 4px;
-  overflow: hidden;
+  float: left;
+  margin-left: 5px;
 }
 
 .video-title h4 {
   color: black;
   margin: 0px;
   text-overflow: ellipsis;
+  /* text-align: center; */
+  text-align: left;
 }
 
 .video-content {
-  margin-left: 46px;
+  position: relative;
+  padding-left: 48px;
+  clear: both;
+  text-align: left;
 }
 
 .video-content p {
-  margin: 0px;
   font-size: 12px;
   color: grey;
 }
